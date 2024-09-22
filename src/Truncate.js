@@ -134,7 +134,7 @@ export default class Truncate extends React.Component {
                 ? "innerText"
                 : "textContent";
 
-        const content = node.innerHTML.replace(/\r\n|\r|\n/g, " ");
+        const content = node.innerHTML.replace(/\r\n|\r/g, " ");
         div.innerHTML = this.extractReplaceLinksKeys(content);
 
         let text = div[contentKey];
